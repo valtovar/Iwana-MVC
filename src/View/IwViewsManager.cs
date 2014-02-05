@@ -1,11 +1,8 @@
 ﻿using UnityEngine;
-
-//using System;
 using System.Collections;
 using System.Collections.Generic;
 
-using Iwana.Controller;
-using Iwana.Model.Events;
+using Iwana.Events;
 
 namespace Iwana.View
 {
@@ -41,7 +38,7 @@ namespace Iwana.View
 				_viewList [view.name] = view;
 				view.dispatcher = _dispatcher;
 
-				if ( view.eventsToHand.Count > 0 )
+				if ( view.eventsToHand != null && view.eventsToHand.Count > 0 )
 				{
 					foreach ( string eventToHand in view.eventsToHand )
 					{

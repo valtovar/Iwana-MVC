@@ -4,7 +4,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 
-using Iwana.Model.Events;
+using Iwana.Events;
 
 namespace Iwana.Controller
 {
@@ -26,7 +26,7 @@ namespace Iwana.Controller
 				Debug.LogError ( "Error in " + this + " Command can't be null." );
 			}
 
-			if ( !( commandClass is IIwCommand ))
+			if ( commandClass.GetInterface ("IIwCommand") == null )
 			{
 				Debug.LogError ( "Error in " + this + " Command Class must be extends of IIwCommand interface." );
 			}

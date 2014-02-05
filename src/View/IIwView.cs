@@ -2,8 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-using Iwana.Model.Events;
-using Iwana.Controller;
+using Iwana.Events;
 
 namespace Iwana.View
 {

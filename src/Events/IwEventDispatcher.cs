@@ -1,9 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-using Iwana.Model.Events;
-
-namespace Iwana.Controller
+namespace Iwana.Events
 {
 	public class IwEventDispatcher 
 	{

@@ -1,11 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-namespace Iwana.Model.Events
+using Iwana.Model.VO;
+
+namespace Iwana.Events
 {
 	public interface IIwEvent 
 	{
 		string 	name { set; get; }
-		Object 	data { set; get; }
+		IwVO 	data { set; get; }
 	}
 }

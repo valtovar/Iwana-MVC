@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-using Iwana.Controller;
+using Iwana.Events;
+using Iwana.Model.VO;
 
 namespace Iwana.Model
 {

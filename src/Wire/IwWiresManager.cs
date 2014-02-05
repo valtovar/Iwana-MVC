@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-using Iwana.Controller;
+using Iwana.Events;
 
 namespace Iwana.Wire
 {

@@ -2,12 +2,11 @@
 using System.Collections;
 using System;
 
+using Iwana.Events;
 using Iwana.Controller;
 using Iwana.Model;
 using Iwana.View;
 using Iwana.Wire;
-
-using Iwana.Model.Events;
 
 namespace Iwana
 {
@@ -29,9 +28,14 @@ namespace Iwana
 			_modelsMgr = new IwModelsManager ( _dispatcher );
 			_viewsMgr = new IwViewsManager ( _dispatcher );
 			_wireMgr = new IwWiresManager (_dispatcher);
+
+			registerCommands ();
+			registerModels ();
+			registerViews ();
+			registerWires ();
 		}
 
-		void HandleOnTriggerEvent (IIwEvent evt)
+		private void HandleOnTriggerEvent (IIwEvent evt)
 		{
 			_controller.executeCommands (evt);
 			_viewsMgr.notifyViews (evt);
