@@ -1,12 +1,6 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\views\HUD.cs">
-    <Files>
-      <File FileName="Assets\scripts\views\HUD.cs" Line="22" Column="38" />
-      <File FileName="Assets\scripts\wires\PlayerWire.cs" Line="22" Column="3" />
-      <File FileName="Assets\scripts\IwGameDemo.cs" Line="29" Column="30" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
